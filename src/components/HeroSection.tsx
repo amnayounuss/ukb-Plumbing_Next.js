@@ -46,7 +46,7 @@ const HeroSection = () => {
             <Phone size={20} />
             <span>Call Now: 07359605766</span>
           </a>
-          <a href="#services" className="bg-white text-blue-600 px-6 py-3 rounded-lg flex items-center justify-center hover:bg-gray-100 transition font-semibold">
+          <a href="/servicesList" className="bg-white text-blue-600 px-6 py-3 rounded-lg flex items-center justify-center hover:bg-gray-100 transition font-semibold">
             Our Services
           </a>
         </div>

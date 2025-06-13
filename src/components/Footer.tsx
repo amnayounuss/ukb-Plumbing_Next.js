@@ -1,6 +1,6 @@
-
 import React from 'react';
-import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin, Youtube } from 'lucide-react';
+import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import Link from 'next/link';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -14,16 +14,16 @@ const Footer = () => {
           <div>
             <div className="mb-6">
               <img
-                src="/lovable-uploads/footerlogo.png"
+                src="/lovable-Uploads/footerlogo.png"
                 alt="UKB Plumbing Logo"
                 className="h-16 mb-4"
               />
             </div>
             <p className="mb-6 text-white/80">
-              Professional plumbing #services in Southampton and surrounding areas. Available 24/7 for all your plumbing needs.
+              Professional plumbing services in Southampton and surrounding areas. Available 24/7 for all your plumbing needs.
             </p>
             <div className="flex space-x-4">
-              <a href="https://www.facebook.com/share/196J65W6BF/" target='blank' className="text-white/70 hover:text-white transition-colors" aria-label="Facebook">
+              <a href="https://www.facebook.com/share/196J65W6BF/" target="_blank" className="text-white/70 hover:text-white transition-colors" aria-label="Facebook">
                 <Facebook size={20} />
               </a>
               <a href="#" className="text-white/70 hover:text-white transition-colors" aria-label="Twitter">
@@ -38,24 +38,34 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Column 2 - #services */}
+          {/* Column 2 - Services */}
           <div>
-            <h3 className="text-xl font-bold mb-6">Our services</h3>
+            <h3 className="text-xl font-bold mb-6">Our Services</h3>
             <ul className="space-y-3">
               <li>
-                <a href="/#services" className="text-white/80 hover:text-white transition-colors">Emergency Plumbing</a>
+                <Link href="/services/emergency-plumbing-repairs" className="text-white/80 hover:text-white transition-colors">
+                  Emergency Plumbing
+                </Link>
               </li>
               <li>
-                <a href="/#services" className="text-white/80 hover:text-white transition-colors">Blocked Drains</a>
+                <Link href="/services/blocked-drain-cleaning" className="text-white/80 hover:text-white transition-colors">
+                  Blocked Drains
+                </Link>
               </li>
               <li>
-                <a href="/#services" className="text-white/80 hover:text-white transition-colors">Water Leak Repairs</a>
+                <Link href="/services/water-leak-repairs" className="text-white/80 hover:text-white transition-colors">
+                  Water Leak Repairs
+                </Link>
               </li>
               <li>
-                <a href="/#services" className="text-white/80 hover:text-white transition-colors">Radiator Repairs</a>
+                <Link href="/services/radiator-repairs" className="text-white/80 hover:text-white transition-colors">
+                  Radiator Repairs
+                </Link>
               </li>
               <li>
-                <a href="/#services" className="text-white/80 hover:text-white transition-colors">Boiler services</a>
+                <Link href="/services/boiler-services" className="text-white/80 hover:text-white transition-colors">
+                  Boiler Services
+                </Link>
               </li>
             </ul>
           </div>
@@ -65,19 +75,29 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-6">Quick Links</h3>
             <ul className="space-y-3">
               <li>
-                <a href="/" className="text-white/80 hover:text-white transition-colors">Home</a>
+                <Link href="/" className="text-white/80 hover:text-white transition-colors">
+                  Home
+                </Link>
               </li>
               <li>
-                <a href="/#about" className="text-white/80 hover:text-white transition-colors">About Us</a>
+                <Link href="/#about" className="text-white/80 hover:text-white transition-colors">
+                  About Us
+                </Link>
               </li>
               <li>
-                <a href="/#services" className="text-white/80 hover:text-white transition-colors">services</a>
+                <Link href="/servicesList" className="text-white/80 hover:text-white transition-colors">
+                  Services
+                </Link>
               </li>
               <li>
-                <a href="/#contact" className="text-white/80 hover:text-white transition-colors">Contact</a>
+                <Link href="/#contact" className="text-white/80 hover:text-white transition-colors">
+                  Contact
+                </Link>
               </li>
               <li>
-                <a href="/privacypolicy" className="text-white/80 hover:text-white transition-colors">Privacy Policy</a>
+                <Link href="/privacypolicy" className="text-white/80 hover:text-white transition-colors">
+                  Privacy Policy
+                </Link>
               </li>
             </ul>
           </div>
@@ -123,8 +143,8 @@ const Footer = () => {
           <div className="aspect-w-16 aspect-h-9 relative pb-[56.25%]">
             <video
               className="absolute inset-0 w-full h-full"
-              src="lovable-uploads/video.mp4"
-              title="UKB Plumbing #services"
+              src="/lovable-Uploads/video.mp4"
+              title="UKB Plumbing Services"
               autoPlay
               muted
               loop
@@ -133,28 +153,27 @@ const Footer = () => {
           </div>
         </div>
 
-
         {/* Bottom section */}
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-white/70 text-center md:text-left">
-            &copy; {currentYear} UKB Plumbing. All rights reserved.
+            © {currentYear} UKB Plumbing. All rights reserved.
           </p>
           <div className="mt-4 md:mt-0">
             <ul className="flex flex-wrap justify-center space-x-6">
               <li>
-                <a href="/termsconditions" className="text-white/70 hover:text-white text-sm transition-colors">
+                <Link href="/termsconditions" className="text-white/70 hover:text-white text-sm transition-colors">
                   Terms & Conditions
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/privacypolicy" className="text-white/70 hover:text-white text-sm transition-colors">
+                <Link href="/privacypolicy" className="text-white/70 hover:text-white text-sm transition-colors">
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/privacypolicy" className="text-white/70 hover:text-white text-sm transition-colors">
+                <Link href="/privacypolicy" className="text-white/70 hover:text-white text-sm transition-colors">
                   Cookie Policy
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
