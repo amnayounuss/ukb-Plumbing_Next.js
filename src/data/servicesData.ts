@@ -19,7 +19,7 @@ import {
       title: "Emergency Plumbing Repairs",
       description: "Fast response to all emergency plumbing issues, including burst pipes, leaks, and fixture failures.",
       icon: WrenchIcon,
-      image: "/lovable-uploads/emergency.png",
+      image: "/lovable-uploads/emergency.jpg",
       slug: "emergency-plumbing-repairs"
     },
     {
@@ -40,7 +40,7 @@ import {
     },
     {
       id: 4,
-      title: "Radiator Repairs",
+      title: "Boiler Repairs",
       description: "Expert repair, installation, and maintenance of all types of radiators and heating systems.",
       icon: Radiation,
       image: "https://img.freepik.com/free-photo/worker-repairing-water-heater_23-2149334227.jpg?t=st=1742245236~exp=1742248836~hmac=1bef076b643196b2f779e52cf55e6b1b4ea06113f8e8ba3103ad965cac6aa5d8&w=996",
@@ -48,7 +48,7 @@ import {
     },
     {
       id: 5,
-      title: "Boiler Installation & Repair",
+      title: "Boiler Repair & Installation",
       description: "Professional installation, repair, and servicing of all boiler types to ensure efficient and safe operation.",
       icon: FlameKindling,
       image: "https://img.freepik.com/free-photo/man-installs-heating-system-house-checks-pipes-with-wrench_169016-55834.jpg?t=st=1742245280~exp=1742248880~hmac=196e62ab5af064c38cde6b119405a6bd13c7f67e78591e74f696156d033644e6&w=996",

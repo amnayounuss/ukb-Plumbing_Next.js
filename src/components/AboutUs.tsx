@@ -31,10 +31,10 @@ const AboutUs = () => {
               About UKB Plumbing
             </span>
             <h2 className="text-3xl md:text-4xl font-bold mb-6 animate-fade-in delay-100 text-ukb-darkblue">
-              Your Trusted Plumbing Partner in Southampton
+              Your Trusted Plumbing Partner
             </h2>
             <p className="text-lg text-ukb-darkgray mb-6 animate-fade-in delay-200">
-              UKB Plumbing has been providing exceptional plumbing services to residents and businesses in Southampton and the surrounding areas for over 15 years. Our team of fully certified plumbers is committed to delivering high-quality workmanship and excellent customer service.
+              UKB Plumbing has been providing exceptional plumbing services to residents and businesses in the surrounding areas for over 15 years. Our team of fully certified plumbers is committed to delivering high-quality workmanship and excellent customer service.
             </p>
             <p className="text-lg text-ukb-darkgray mb-8 animate-fade-in delay-300">
               Whether you need emergency repairs, routine maintenance, or a complete installation, we have the expertise and equipment to handle all your plumbing needs efficiently and effectively.

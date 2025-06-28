@@ -53,6 +53,12 @@ const Header = () => {
             Home
           </a>
           <Link
+            href="/portfolio"
+            className="font-medium hover:text-ukb-blue transition-colors"
+          >
+            Portfolio
+          </Link>
+          <Link
             href="/servicesList"
             className="font-medium hover:text-ukb-blue transition-colors"
           >

@@ -89,14 +89,14 @@ const ContactSection = () => {
                   <div className="bg-ukb-lightblue p-3 rounded-full mr-4">
                     <MapPin className="w-6 h-6 text-ukb-blue" />
                   </div>
-                  <div>
+                  {/* <div>
                     <h4 className="font-medium text-ukb-darkblue mb-1">Address</h4>
                     <address className="text-ukb-darkgray not-italic">
                       123 High Street<br />
                       Southampton, SO14 2DY<br />
                       United Kingdom
                     </address>
-                  </div>
+                  </div> */}
                 </div>
               </div>
               

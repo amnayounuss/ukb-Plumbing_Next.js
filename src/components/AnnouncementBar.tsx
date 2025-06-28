@@ -1,4 +1,4 @@
-
+"use client"
 import React, { useEffect, useState } from 'react';
 import { Phone } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -11,6 +11,12 @@ const AnnouncementBar = () => {
   const [currentAnnouncement, setCurrentAnnouncement] = useState(0);
   
   const announcements = [
+    <>
+      <span className="font-large">Urgent boiler breakdown and boiler installation - Call Now on </span>
+      <a href="tel:07359605766" className={cn("font-bold underline transition-colors", isLight ? "hover:text-ukb-blue" : "hover:text-ukb-lightblue")}>
+        07359605766
+      </a>
+    </>,
     <>
       <span className="font-large">24/7 emergency plumbing services - Call Now on </span>
       <a href="tel:07359605766" className={cn("font-bold underline transition-colors", isLight ? "hover:text-ukb-blue" : "hover:text-ukb-lightblue")}>
@@ -42,7 +48,7 @@ const AnnouncementBar = () => {
       </a>
     </>,
     <>
-      <span className="font-bold">Affordable emergency plumber in Southampton - Call Now on </span>
+      <span className="font-bold">Affordable emergency plumber - Call Now on </span>
       <a href="tel:07359605766" className={cn("font-bold underline transition-colors", isLight ? "hover:text-ukb-blue" : "hover:text-ukb-lightblue")}>
         07359605766
       </a>

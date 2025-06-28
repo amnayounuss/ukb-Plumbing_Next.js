@@ -130,8 +130,8 @@ const PrivacyPolicy = () => {
               <p>If you have any questions about this Privacy Policy or our data practices, please contact us at:</p>
               <div className="mt-4">
                 <p><strong>UKB Plumbing - 24/7 Emergency Plumbing Services</strong></p>
-                <p>123 High Street</p>
-                <p>Southampton, SO14 2DY</p>
+                {/* <p>123 High Street</p>
+                <p>Southampton, SO14 2DY</p> */}
                 <p>Email: info@ukbplumbing.co.uk</p>
                 <p>Phone: 07359605766</p>
               </div>

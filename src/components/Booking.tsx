@@ -97,7 +97,7 @@ const Booking = () => {
                     <h4 className="font-medium text-ukb-darkblue mb-1">Address</h4>
                     <address className="text-ukb-darkgray not-italic">
                       123 High Street<br />
-                      Southampton, SO14 2DY<br />
+                      SO14 2DY<br />
                       United Kingdom
                     </address>
                   </div>

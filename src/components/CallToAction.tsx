@@ -22,7 +22,7 @@ const CallToAction = () => {
                 <span className="text-ukb-blue">We're Ready 24/7!</span>
               </h2>
               <p className="text-xl text-black/90 mb-8 animate-fade-in delay-100">
-                Need a local emergency plumber for leaking toilet, leaking shower, leaking tap, gas leak repair, washing machine installation, radiators not working, or leaking radiator problems? Our same-day plumbing services are available for all urgent plumbing repair needs in Southampton. Call our affordable emergency plumber team now!
+                Need a local emergency plumber for leaking toilet, leaking shower, leaking tap, gas leak repair, washing machine installation, radiators not working, or leaking radiator problems? Our same-day plumbing services are available for all urgent plumbing repair Call our affordable emergency plumber team now!
               </p>
               <div className="flex flex-col sm:flex-row gap-4 animate-fade-in delay-200">
                 <a 

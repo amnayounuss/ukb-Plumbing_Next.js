@@ -51,7 +51,7 @@ const TermsConditions = () => {
                 <li>Your location</li>
                 <li>Weather conditions and other factors beyond our control</li>
               </ul>
-              <p>Our affordable emergency plumber services cover Southampton and surrounding areas. For non-emergency services, appointments will be scheduled at mutually convenient times.</p>
+              <p>Our affordable emergency plumber services cover surrounding areas. For non-emergency services, appointments will be scheduled at mutually convenient times.</p>
             </section>
             
             <section className="mb-8">
@@ -144,8 +144,8 @@ const TermsConditions = () => {
               <p>If you have any questions about these Terms and Conditions, please contact us at:</p>
               <div className="mt-4">
                 <p><strong>UKB Plumbing - 24/7 Emergency Plumbing Services</strong></p>
-                <p>123 High Street</p>
-                <p>Southampton, SO14 2DY</p>
+                {/* <p>123 High Street</p>
+                <p>Southampton, SO14 2DY</p> */}
                 <p>Email: info@ukbplumbing.co.uk</p>
                 <p>Phone: 07359605766</p>
               </div>

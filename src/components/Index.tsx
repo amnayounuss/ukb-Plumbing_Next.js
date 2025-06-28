@@ -17,7 +17,7 @@ const Index = () => {
   // Update document title and meta tags
   useEffect(() => {
     // Set document title with keywords
-    document.title = "UKB Plumbing - 24/7 Emergency Plumbing Services in Southampton";
+    document.title = "UKB Plumbing - 24/7 Emergency Plumbing Services";
     
     // Create or update meta description
     let metaDescription = document.querySelector('meta[name="description"]');
@@ -26,7 +26,7 @@ const Index = () => {
       metaDescription.setAttribute('name', 'description');
       document.head.appendChild(metaDescription);
     }
-    metaDescription.setAttribute('content', "Professional 24/7 emergency plumbing services in Southampton. Same-day plumbing services for urgent plumbing repairs including leaking toilets, leaking showers, leaking taps, gas leak repair, washing machine installation, radiators not working, and leaking radiator issues by your local emergency plumber. Our affordable emergency plumber team handles all plumbing emergencies quickly and efficiently.");
+    metaDescription.setAttribute('content', "Professional 24/7 emergency plumbing services. Same-day plumbing services for urgent plumbing repairs including leaking toilets, leaking showers, leaking taps, gas leak repair, washing machine installation, radiators not working, and leaking radiator issues by your local emergency plumber. Our affordable emergency plumber team handles all plumbing emergencies quickly and efficiently.");
     
     // Create or update keywords meta tag
     let metaKeywords = document.querySelector('meta[name="keywords"]');
@@ -35,7 +35,7 @@ const Index = () => {
       metaKeywords.setAttribute('name', 'keywords');
       document.head.appendChild(metaKeywords);
     }
-    metaKeywords.setAttribute('content', "24/7 emergency plumbing services, urgent plumbing repair, same-day plumbing services, emergency plumbing company, plumbing emergencies, local emergency plumber, affordable emergency plumber, emergency plumbing service Southampton, leaking toilet, leaking shower, leaking tap, gas leak repair, washing machine installation, radiators not working, leaking radiator");
+    metaKeywords.setAttribute('content', "24/7 emergency plumbing services, urgent plumbing repair, same-day plumbing services, emergency plumbing company, plumbing emergencies, local emergency plumber, affordable emergency plumber, emergency plumbing service, leaking toilet, leaking shower, leaking tap, gas leak repair, washing machine installation, radiators not working, leaking radiator");
   }, []);
 
   // Scroll animation handler
