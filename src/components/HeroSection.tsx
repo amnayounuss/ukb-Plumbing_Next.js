@@ -33,7 +33,7 @@ const HeroSection = () => {
           SAME-DAY RESPONSE IN 30-60 MINUTES
         </span>
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-          PLUMBING <span className="text-yellow-400">EMERGENCIES?</span>
+          Plumbing and Heating<span className="text-yellow-400">EMERGENCIES?</span>
           <br />
           <span className="text-white">WE'RE THERE FAST!</span>
         </h1>
