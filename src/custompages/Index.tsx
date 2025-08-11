@@ -26,7 +26,7 @@ const Index = () => {
       metaDescription.setAttribute('name', 'description');
       document.head.appendChild(metaDescription);
     }
-    metaDescription.setAttribute('content', "24/7 emergency plumbers in Southampton. Gas Safe registered engineers for leaks, boiler repairs & installations. Fast response, same-day service. Call +44 7359 605766 now for immediate help!");
+    metaDescription.setAttribute('content', "24/7 emergency plumbers in Southampton. Gas Safe registered engineers for leaks, boiler repairs & installations. Fast response, same-day service. Call +447359605766 now for immediate help!");
 
     // Viewport
     let metaViewport = document.querySelector('meta[name="viewport"]');
@@ -53,7 +53,7 @@ const Index = () => {
       "@context": "https://schema.org",
       "@type": "Plumber",
       "name": "UKB Plumbing",
-      "image": "https://ukbplumbing.co.uk/images/ukb-plumbing-logo.jpg",
+      "image": "https://ukbplumbing.co.uk/lovable-uploads/7dc16efa-a747-4593-ae00-6e7e38c4d44e.png",
       "@id": "https://ukbplumbing.co.uk",
       "url": "https://ukbplumbing.co.uk",
       "telephone": "+44 7359 605766",
