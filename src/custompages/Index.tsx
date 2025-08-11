@@ -14,72 +14,188 @@ import BrandCarousel from '@/components/BrandCarousel';
 import AnnouncementBar from '@/components/AnnouncementBar';
 
 const Index = () => {
-  // Update document title and meta tags
+  // SEO and document metadata updates
   useEffect(() => {
-    // Set document title with keywords
-    document.title = "UKB Plumbing - 24/7 Emergency Plumbing Services";
-    
-    // Create or update meta description
+    // Primary title with main keyword and location
+    document.title = "24/7 Emergency Plumbers Southampton | UKB Plumbing | Fast Response";
+
+    // Meta description
     let metaDescription = document.querySelector('meta[name="description"]');
     if (!metaDescription) {
       metaDescription = document.createElement('meta');
       metaDescription.setAttribute('name', 'description');
       document.head.appendChild(metaDescription);
     }
-    metaDescription.setAttribute('content', "Professional 24/7 emergency plumbing services. Same-day plumbing services for urgent plumbing repairs including leaking toilets, leaking showers, leaking taps, gas leak repair, washing machine installation, radiators not working, and leaking radiator issues by your local emergency plumber. Our affordable emergency plumber team handles all plumbing emergencies quickly and efficiently.");
-    
-    // Create or update keywords meta tag
-    let metaKeywords = document.querySelector('meta[name="keywords"]');
-    if (!metaKeywords) {
-      metaKeywords = document.createElement('meta');
-      metaKeywords.setAttribute('name', 'keywords');
-      document.head.appendChild(metaKeywords);
+    metaDescription.setAttribute('content', "24/7 emergency plumbers in Southampton. Gas Safe registered engineers for leaks, boiler repairs & installations. Fast response, same-day service. Call +44 7359 605766 now for immediate help!");
+
+    // Viewport
+    let metaViewport = document.querySelector('meta[name="viewport"]');
+    if (!metaViewport) {
+      metaViewport = document.createElement('meta');
+      metaViewport.setAttribute('name', 'viewport');
+      metaViewport.setAttribute('content', "width=device-width, initial-scale=1, maximum-scale=5");
+      document.head.appendChild(metaViewport);
     }
-    metaKeywords.setAttribute('content', "24/7 emergency plumbing services, urgent plumbing repair, same-day plumbing services, emergency plumbing company, plumbing emergencies, local emergency plumber, affordable emergency plumber, emergency plumbing service, leaking toilet, leaking shower, leaking tap, gas leak repair, washing machine installation, radiators not working, leaking radiator");
+
+    // Canonical URL
+    let linkCanonical = document.querySelector('link[rel="canonical"]');
+    if (!linkCanonical) {
+      linkCanonical = document.createElement('link');
+      linkCanonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(linkCanonical);
+    }
+    linkCanonical.setAttribute('href', "https://ukbplumbing.co.uk/");
+
+    // Local Business Schema
+    const schemaScript = document.createElement('script');
+    schemaScript.type = 'application/ld+json';
+    schemaScript.text = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Plumber",
+      "name": "UKB Plumbing",
+      "image": "https://ukbplumbing.co.uk/images/ukb-plumbing-logo.jpg",
+      "@id": "https://ukbplumbing.co.uk",
+      "url": "https://ukbplumbing.co.uk",
+      "telephone": "+44 7359 605766",
+      "priceRange": "££",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "11 Fuchsia Gardens",
+        "addressLocality": "Southampton",
+        "postalCode": "SO16 6TY",
+        "addressCountry": "GB"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "50.9358",
+        "longitude": "-1.4316"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "sameAs": [
+        "https://www.facebook.com/ukbplumbing",
+        "https://www.instagram.com/ukbplumbing"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "67",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    });
+    document.head.appendChild(schemaScript);
+
+    // Service schema for all services offered
+    const serviceSchema = document.createElement('script');
+    serviceSchema.type = 'application/ld+json';
+    serviceSchema.text = JSON.stringify([
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Emergency plumbing",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "UKB Plumbing"
+        },
+        "description": "24/7 emergency plumbing services for leaks, blockages and urgent repairs",
+        "areaServed": {
+          "@type": "GeoCircle",
+          "geoMidpoint": {
+            "@type": "GeoCoordinates",
+            "latitude": "50.9358",
+            "longitude": "-1.4316"
+          },
+          "geoRadius": "20000"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Boiler repair",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "UKB Plumbing"
+        },
+        "description": "Expert boiler repair services for all makes and models"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Toilet Installation",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "UKB Plumbing"
+        },
+        "description": "Professional toilet installation services"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Plumbing Leak Detection",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "UKB Plumbing"
+        },
+        "description": "Advanced leak detection and repair services"
+      }
+    ]);
+    document.head.appendChild(serviceSchema);
+
+    // Breadcrumb Schema
+    const breadcrumbScript = document.createElement('script');
+    breadcrumbScript.type = 'application/ld+json';
+    breadcrumbScript.text = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://ukbplumbing.co.uk/"
+      }]
+    });
+    document.head.appendChild(breadcrumbScript);
   }, []);
 
-  // Scroll animation handler
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const elements = document.querySelectorAll('.animate-fade-in');
-  //     elements.forEach(element => {
-  //       const elementPosition = element.getBoundingClientRect();
-  //       const windowHeight = window.innerHeight;
-        
-  //       if (elementPosition.top < windowHeight * 0.9) {
-  //         element.classList.add('opacity-100');
-  //       }
-  //     });
-  //   };
-    
-  //   window.addEventListener('scroll', handleScroll);
-  //   // Trigger on initial load
-  //   handleScroll();
-    
-  //   return () => window.removeEventListener('scroll', handleScroll);
-  // }, []);
-  
   return (
     <div className="min-h-screen bg-white">
+      {/* Language and region meta */}
+      <meta httpEquiv="content-language" content="en-gb" />
+      <meta name="geo.region" content="GB-SOX" />
+      <meta name="geo.placename" content="Southampton" />
+      
       <AnnouncementBar />
       <Header />
-      <HeroSection />
-      <ServiceBanner />
-      <ServicesSection />
-      <BrandCarousel />
-      <WhyChooseUs />
-      {/* <GoogleReviews /> */}
-      <AboutUs />
-      <Testimonials />
-      <CallToAction />
-      <ContactSection />
+      
+      {/* Main content with semantic HTML5 structure */}
+      <main>
+        <HeroSection />
+        <ServiceBanner />
+        
+        {/* Hidden h1 for SEO (visible in DOM but not visually) */}
+        <h1 className="sr-only">UKB Plumbing - 24/7 Emergency Plumbers in Southampton | Fast Response Plumbing Services</h1>
+        
+        <ServicesSection />
+        <BrandCarousel />
+        <WhyChooseUs />
+        <AboutUs />
+        <Testimonials />
+        <CallToAction />
+        <ContactSection />
+      </main>
+      
       <Footer />
       
-      {/* Scroll to top button */}
+      {/* Scroll to top button with enhanced accessibility */}
       <button
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-        className="fixed bottom-8 right-8 z-40 bg-ukb-blue text-white p-3 rounded-full shadow-button hover:bg-ukb-darkblue transition-colors duration-300"
-        aria-label="Scroll to top"
+        className="fixed bottom-8 right-8 z-40 bg-ukb-blue text-white p-3 rounded-full shadow-button hover:bg-ukb-darkblue transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-ukb-blue focus:ring-offset-2"
+        aria-label="Scroll back to top"
       >
         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
