@@ -31,8 +31,8 @@ const Header = () => {
           <img
             src={
               isScrolled
-                ? "/lovable-uploads/7dc16efa-a747-4593-ae00-6e7e38c4d44e.png"
-                : "/lovable-uploads/7dc16efa-a747-4593-ae00-6e7e38c4d44e.png"
+                ? "/lovable-uploads/logo.png"
+                : "/lovable-uploads/logo.png"
             }
             alt="Logo"
             className="h-16 md:h-15 lg:h-14 w-auto object-contain"
