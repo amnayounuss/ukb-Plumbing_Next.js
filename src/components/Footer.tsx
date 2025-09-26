@@ -14,7 +14,7 @@
               <div className="mb-6">
                 <img
                   src="/lovable-uploads/footerlogo.png"
-                  alt="UKB Plumbing Logo"
+                  alt="UKB Plumbing"
                   className="h-16 mb-4"
                 />
               </div>

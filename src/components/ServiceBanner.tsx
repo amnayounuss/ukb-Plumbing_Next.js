@@ -12,7 +12,7 @@ const ServiceBanner = () => {
               <div className="flex justify-center mb-6">
                 <img 
                   src="/lovable-uploads/7dc16efa-a747-4593-ae00-6e7e38c4d44e.png" 
-                  alt="UKB Plumbing Logo" 
+                  alt="UKB Plumbing" 
                   className="h-24"
                 />
               </div>
