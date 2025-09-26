@@ -28,31 +28,41 @@ const HeroSection = () => {
     {/* Content */}
     <div className="container mx-auto px-4 relative z-10 flex justify-between items-center">
       {/* Left Side: Text Content */}
-      <div className="max-w-2xl text-white">
-        <span className="inline-block px-3 py-1 bg-yellow-400 text-gray-900 text-sm font-bold rounded-full mb-4">
-          SAME-DAY RESPONSE IN 30-60 MINUTES
-        </span>
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-          Plumbing and Heating<span className="text-yellow-400">EMERGENCIES?</span>
-          <br />
-          <span className="text-white">WE'RE THERE FAST!</span>
-        </h1>
-        <p className="text-lg md:text-xl mb-8 text-gray-200">
-          Get rapid relief with our <span className="font-semibold text-yellow-400">30-60 minute response time</span> for all plumbing emergencies! From leaking toilets, showers, or taps to gas leak repairs and radiator issues, our expert team provides same-day service to solve your plumbing problems quickly.
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4">
-          <a href="tel:+447359605766" className="bg-yellow-400 text-gray-900 px-6 py-3 rounded-lg flex items-center justify-center gap-2 hover:bg-yellow-500 transition font-semibold">
-            <Phone size={20} />
-            <span>Call Now: 07359605766</span>
-          </a>
-          <Link
-            href="/servicesList"
-            className="bg-white text-blue-600 px-6 py-3 rounded-lg flex items-center justify-center hover:bg-gray-100 transition font-semibold"
-          >
-            Our Services
-          </Link>
-        </div>
-      </div>
+    <div className="w-full px-4 text-white text-center sm:text-left">
+  <span className="inline-block px-3 py-1 bg-yellow-400 text-gray-900 text-xs sm:text-sm font-bold rounded-full mb-4">
+    SAME-DAY RESPONSE IN 30-60 MINUTES
+  </span>
+  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-snug sm:leading-tight mb-6">
+    Plumbing and Heating <span className="text-yellow-400">EMERGENCIES?</span>
+    <br className="hidden sm:block" />
+    <span className="text-white">WE'RE THERE FAST!</span>
+  </h1>
+  <p className="text-base sm:text-lg md:text-xl mb-8 text-gray-200">
+    Get rapid relief with our{" "}
+    <span className="font-semibold text-yellow-400">
+      30-60 minute response time
+    </span>{" "}
+    for all plumbing emergencies! From leaking toilets, showers, or taps to gas
+    leak repairs and radiator issues, our expert team provides same-day service
+    to solve your plumbing problems quickly.
+  </p>
+  <div className="flex flex-col sm:flex-row gap-4 items-center sm:items-start">
+    <a
+      href="tel:07359605766"
+      className="w-full sm:w-auto bg-yellow-400 text-gray-900 px-6 py-3 rounded-lg flex items-center justify-center gap-2 hover:bg-yellow-500 transition font-semibold"
+    >
+      <Phone size={20} />
+      <span>Call Now: 07359605766</span>
+    </a>
+    <Link
+      href="/servicesList"
+      className="w-full sm:w-auto bg-white text-blue-600 px-6 py-3 rounded-lg flex items-center justify-center hover:bg-gray-100 transition font-semibold"
+    >
+      Our Services
+    </Link>
+  </div>
+</div>
+
 
       {/* Right Side: Image with Animation */}
       <div className="hidden md:block mt-16 ml-10 animate-slide-in-right">

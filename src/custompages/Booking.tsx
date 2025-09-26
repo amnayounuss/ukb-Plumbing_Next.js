@@ -72,7 +72,7 @@ const Booking = () => {
                   </div>
                   <div>
                     <h4 className="font-medium text-ukb-darkblue mb-1">Phone</h4>
-                    <a href="tel:+447954719411" className="text-ukb-darkgray hover:text-ukb-blue transition-colors">
+                    <a href="tel:07359605766" className="text-ukb-darkgray hover:text-ukb-blue transition-colors">
                       07359605766
                     </a>
                   </div>
@@ -109,7 +109,7 @@ const Booking = () => {
                 <h4 className="font-semibold text-xl mb-3">Emergency Service</h4>
                 <p className="mb-4">We offer 24/7 emergency plumbing services. Don't hesitate to call us any time.</p>
                 <a
-                  href="tel:+447954719411"
+                  href="tel:07395065766"
                   className="inline-flex items-center gap-2 bg-white text-ukb-blue font-medium py-2 px-4 rounded-md transition-colors hover:bg-ukb-lightblue"
                 >
                   <Phone className="w-4 h-4" />

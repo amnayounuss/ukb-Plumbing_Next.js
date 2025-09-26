@@ -112,7 +112,7 @@
                   <Phone className="w-5 h-5 mr-3 mt-1 text-ukb-white" />
                   <div>
                     <p className="font-medium">Phone</p>
-                    <a href="tel:+447954719411" className="text-white/80 hover:text-white transition-colors">
+                    <a href="tel:07359605766" className="text-white/80 hover:text-white transition-colors">
                       07359605766
                     </a>
                   </div>
